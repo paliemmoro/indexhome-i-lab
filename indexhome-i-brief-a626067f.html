@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>再回目录 · 爱游戏知识库</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #f8f6f0;
+      font-family: 'Georgia', 'Noto Serif SC', 'Times New Roman', serif;
+      color: #2d2a24;
+      line-height: 1.7;
+      padding: 2rem 1rem 4rem;
+    }
+
+    .page {
+      max-width: 820px;
+      margin: 0 auto;
+      background: #fefcf7;
+      padding: 3rem 2.2rem;
+      border-radius: 36px;
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.03), 0 2px 6px rgba(0, 0, 0, 0.02);
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      color: #3d352d;
+      border-left: 6px solid #b5a48b;
+      padding-left: 1.2rem;
+      margin-top: 0.2rem;
+      margin-bottom: 2.2rem;
+    }
+
+    h2 {
+      font-size: 1.35rem;
+      font-weight: 450;
+      margin-top: 2.8rem;
+      margin-bottom: 1rem;
+      color: #4d4238;
+      border-bottom: 1px solid #e6ddd0;
+      padding-bottom: 0.35rem;
+    }
+
+    h3 {
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-top: 1.8rem;
+      margin-bottom: 0.6rem;
+      color: #5a4e42;
+    }
+
+    p {
+      margin-bottom: 1.15rem;
+      text-align: justify;
+    }
+
+    a {
+      color: #7f6b54;
+      text-decoration: none;
+      border-bottom: 1px dashed #cbbaa7;
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    a:hover {
+      color: #4a3f35;
+      border-bottom: 1px solid #7f6b54;
+    }
+
+    .hero-tag {
+      background: #ece7dd;
+      padding: 1.5rem 2rem;
+      border-radius: 32px;
+      margin: 1.8rem 0 2.2rem;
+      font-size: 1.05rem;
+      color: #3c352e;
+      border: 1px solid #ded7ca;
+    }
+
+    .hero-tag strong {
+      font-weight: 600;
+      color: #4d3e30;
+    }
+
+    .block-note {
+      background: #f5efe7;
+      border-left: 5px solid #b7a690;
+      padding: 1.2rem 1.8rem;
+      margin: 2rem 0;
+      border-radius: 0 20px 20px 0;
+      font-style: normal;
+    }
+
+    .block-note p:last-child {
+      margin-bottom: 0;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.2rem;
+      margin: 2rem 0 1.2rem;
+    }
+
+    .info-card {
+      background: #f9f5ee;
+      padding: 1.4rem 1.8rem;
+      border-radius: 24px;
+      border: 1px solid #e7dfd3;
+    }
+
+    .info-card p {
+      margin-bottom: 0.4rem;
+    }
+
+    .info-card .label {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #8f7d6a;
+      margin-bottom: 0.2rem;
+      display: block;
+    }
+
+    .faq-item {
+      margin: 1.2rem 0 1.6rem;
+    }
+
+    .faq-q {
+      font-weight: 550;
+      color: #4d4137;
+      margin-bottom: 0.2rem;
+    }
+
+    .faq-a {
+      padding-left: 1.2rem;
+      border-left: 3px solid #ddd3c4;
+      color: #4b423a;
+    }
+
+    .divider {
+      height: 1px;
+      background: linear-gradient(to right, transparent, #d6cdbc, transparent);
+      margin: 2.6rem 0 2rem;
+    }
+
+    .tip-box {
+      background: #f0ece2;
+      padding: 1.3rem 1.8rem;
+      border-radius: 30px;
+      margin: 2rem 0 1.5rem;
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+
+    .tip-box .icon {
+      font-size: 1.8rem;
+      line-height: 1;
+      color: #7f6c56;
+    }
+
+    .tip-box .tip-content {
+      flex: 1;
+    }
+
+    .tip-box .tip-content p {
+      margin-bottom: 0.3rem;
+    }
+
+    .small-note {
+      font-size: 0.9rem;
+      color: #6f6457;
+    }
+
+    @media (max-width: 600px) {
+      .page {
+        padding: 1.8rem 1.2rem;
+      }
+      h1 {
+        font-size: 1.6rem;
+        padding-left: 0.9rem;
+      }
+      .hero-tag {
+        padding: 1.2rem 1.4rem;
+      }
+      .block-note {
+        padding: 1rem 1.2rem;
+      }
+      .info-card {
+        padding: 1rem 1.2rem;
+      }
+      .tip-box {
+        flex-direction: column;
+        gap: 0.3rem;
+        padding: 1.2rem 1.4rem;
+      }
+      .tip-box .icon {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+  <h1>目录 · 再次回到这里</h1>
+
+  <div class="hero-tag">
+    <strong>收藏夹里的老朋友</strong> —— 也许你曾匆匆路过，也许你已有一段日子没来。<br>
+    这里是 <a href="https://indexhome-i-game.com.cn">爱游戏</a> 的知识库入口，每一次重新打开，都像翻开一本常看常新的笔记。
+  </div>
+
+  <p>把某个页面加入书签，常常是因为它值得回头。这个站点不是为了热闹而建，它更偏向一个安静的资料角落：关于游戏文化的脉络、工具心得、以及那些需要慢慢梳理的内容。再次访问的你，或许会发现上次忽略的段落，或者读到新补充的条目。</p>
+
+  <div class="block-note">
+    <p>📌 如果你已经有一阵子没来，不妨从这里开始：浏览下面的分类区域，或者直接搜索你印象中的关键词。<br>
+    书签栏里保留着 <a href="https://indexhome-i-game.com.cn">爱游戏</a>，就是保留了一扇可以随时推开的门。</p>
+  </div>
+
+  <h2>知识库速览 · 主要区域</h2>
+
+  <div class="info-grid">
+    <div class="info-card">
+      <span class="label">✦ 条目与索引</span>
+      <p>按主题整理的笔记、术语表、游戏机制拆解。适合需要快速定位某个概念的场合。</p>
+    </div>
+    <div class="info-card">
+      <span class="label">✦ 工具与参考</span>
+      <p>收录常用计算器、模拟器参数、资源对照表。实用向，不定期更新。</p>
+    </div>
+    <div class="info-card">
+      <span class="label">✦ 杂谈与散记</span>
+      <p>偏个人视角的游玩记录、版本对比、冷门细节。适合闲下来的时候翻两段。</p>
+    </div>
+  </div>
+
+  <h2>提示 · 更顺畅地使用</h2>
+
+  <div class="tip-box">
+    <div class="icon">🔖</div>
+    <div class="tip-content">
+      <p><strong>如果你在移动端阅读：</strong>建议横屏或使用平板模式，部分表格在窄屏下会改用滚动展示。所有外部链接均会在当前标签页打开，你可以随时返回。</p>
+      <p class="small-note">另外，站内搜索功能目前依赖浏览器自带的「页面内查找」（Ctrl+F / 菜单查找），未来可能会增加专用搜索框。</p>
+    </div>
+  </div>
+
+  <h2>一些你可能想知道的事</h2>
+
+  <div class="faq-item">
+    <div class="faq-q">Q：这里的资料有多及时？</div>
+    <div class="faq-a">大部分内容基于稳定版本或长期有效的知识，时效性较强的条目会标注最后更新月份。如果发现过时信息，欢迎通过站点底部邮箱告知。</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">Q：为什么有些页面排版偏朴素？</div>
+    <div class="faq-a">这个站点优先保证内容的可读性和加载速度，样式服务于功能。没有大图轮播或复杂动效，适合专注阅读。</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">Q：我收藏的链接会失效吗？</div>
+    <div class="faq-a">网站保持长期维护，旧链接尽量做重定向或保留存档页。如果你发现某个地址打不开，可以手动将路径中的数字或英文去掉，返回上一级目录查找。</div>
+  </div>
+
+  <div class="divider"></div>
+
+  <h3>相关区域 & 持续关注</h3>
+
+  <p>除了主站内容，侧边还有几个常被问起的分类：<br>
+  入门指引、版本历史、常见问题汇总。这些页面会随反馈逐步调整结构。</p>
+
+  <p>如果你想从更个人的角度了解这个站点的来历，可以读读「关于」页 —— 那里没有广告，也没有复杂的介绍，只是一段简短的话，说明为什么会有这个网站。</p>
+
+  <div class="block-note" style="border-left-color: #b0987c; margin-top: 2.4rem;">
+    <p><strong>最后，一点小小的提醒：</strong>书签的存在是为了让好东西更容易被重新找到。如果你觉得这个站点值得保留，不妨把 <a href="https://indexhome-i-game.com.cn">爱游戏</a> 放在浏览器的书签栏里，或者记在备忘录里 —— 下次想查点什么的时候，它就在那里。</p>
+  </div>
+
+  <p style="margin-top: 2.8rem; font-size: 0.9rem; color: #8c7f6f; text-align: center; border-top: 1px solid #e9e2d7; padding-top: 1.8rem;">
+    再次访问 · 知识库入口 · 持续关注
+  </p>
+</div>
+</body>
+</html>
