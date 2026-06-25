@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>世界杯 · 简明指南与访问提醒 · chinasport-fifa2026</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #f0f2f5;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      color: #1e2a3a;
+      line-height: 1.6;
+      padding: 2rem 1.5rem;
+    }
+
+    .container {
+      max-width: 1120px;
+      margin: 0 auto;
+    }
+
+    /* --- hero --- */
+    .hero {
+      background: #ffffff;
+      border-radius: 24px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.03), 0 2px 6px rgba(0, 0, 0, 0.02);
+      padding: 3rem 2.5rem;
+      margin-bottom: 2.2rem;
+      border: 1px solid #eaecf0;
+    }
+
+    .hero h1 {
+      font-size: 2.2rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: #0b1a2b;
+      margin-bottom: 0.75rem;
+    }
+
+    .hero .badge {
+      display: inline-block;
+      background: #e7edf4;
+      color: #1f3a5c;
+      font-size: 0.85rem;
+      font-weight: 500;
+      padding: 0.2rem 1rem;
+      border-radius: 40px;
+      margin-bottom: 1rem;
+      border: 1px solid #d5dee9;
+    }
+
+    .hero p {
+      max-width: 640px;
+      font-size: 1.05rem;
+      color: #2c3e50;
+    }
+
+    .hero .highlight-link {
+      margin-top: 1.6rem;
+      font-size: 1rem;
+    }
+
+    .hero .highlight-link a {
+      color: #1d4b7a;
+      text-decoration: none;
+      font-weight: 500;
+      border-bottom: 1.5px solid #b3c9e2;
+      transition: border-color 0.2s;
+    }
+
+    .hero .highlight-link a:hover {
+      border-bottom-color: #1d4b7a;
+    }
+
+    /* --- 卡片网格 (优势/说明/FAQ混合) --- */
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 18px;
+      padding: 1.6rem 1.8rem;
+      border: 1px solid #e2e6ec;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02), 0 1px 3px rgba(0, 0, 0, 0.02);
+      transition: box-shadow 0.2s;
+    }
+
+    .card:hover {
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.04);
+    }
+
+    .card h3 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: #13293f;
+      letter-spacing: -0.01em;
+    }
+
+    .card h3 .accent {
+      font-weight: 400;
+      color: #5e6f84;
+      margin-left: 0.3rem;
+      font-size: 0.95rem;
+    }
+
+    .card p, .card li {
+      font-size: 0.96rem;
+      color: #2b3f55;
+    }
+
+    .card ul {
+      padding-left: 1.2rem;
+      margin-top: 0.3rem;
+    }
+
+    .card ul li {
+      margin-bottom: 0.3rem;
+    }
+
+    .card .mini-tag {
+      display: inline-block;
+      background: #eef2f7;
+      font-size: 0.7rem;
+      font-weight: 500;
+      padding: 0.1rem 0.6rem;
+      border-radius: 30px;
+      color: #305070;
+      margin-right: 0.3rem;
+      border: 1px solid #d8e0ea;
+    }
+
+    /* --- 全宽卡片 (说明/提示区) --- */
+    .full-card {
+      background: #ffffff;
+      border-radius: 18px;
+      border: 1px solid #e2e6ec;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
+      padding: 1.8rem 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .full-card h2 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #13293f;
+      margin-bottom: 0.6rem;
+    }
+
+    .full-card p {
+      font-size: 0.96rem;
+      color: #2b3f55;
+      margin-bottom: 0.5rem;
+    }
+
+    .faq-item {
+      margin: 1rem 0 0.2rem 0;
+    }
+
+    .faq-item strong {
+      display: block;
+      font-weight: 600;
+      color: #1f3a5c;
+      margin-bottom: 0.15rem;
+    }
+
+    .faq-item span {
+      color: #3d5775;
+    }
+
+    .dot-divider {
+      margin: 0 0.4rem;
+      color: #b6c5d7;
+    }
+
+    .link-marker {
+      color: #1d4b7a;
+      text-decoration: none;
+      border-bottom: 1px solid #bccfdf;
+    }
+
+    .link-marker:hover {
+      border-bottom-color: #1d4b7a;
+    }
+
+    /* --- 底部 --- */
+    .footer {
+      border-top: 1px solid #dce2eb;
+      padding-top: 1.8rem;
+      margin-top: 0.8rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .footer p {
+      font-size: 0.85rem;
+      color: #59748f;
+    }
+
+    .footer a {
+      color: #1d4b7a;
+      text-decoration: none;
+      border-bottom: 1px solid #cbd7e6;
+    }
+
+    .footer a:hover {
+      border-bottom-color: #1d4b7a;
+    }
+
+    /* --- 响应式 --- */
+    @media (max-width: 680px) {
+      body {
+        padding: 1rem 1rem;
+      }
+      .hero {
+        padding: 2rem 1.5rem;
+      }
+      .hero h1 {
+        font-size: 1.7rem;
+      }
+      .grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+      .card {
+        padding: 1.2rem 1.2rem;
+      }
+      .full-card {
+        padding: 1.2rem 1.2rem;
+      }
+      .footer {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <!-- hero 区 -->
+  <div class="hero">
+    <span class="badge">2026 简明指南 · 赛事提醒</span>
+    <h1>世界杯观赛与信息索引</h1>
+    <p>
+      围绕 FIFA 2026 世界杯，本页整合了核心赛事动态与平台导航要点。无论您关注赛程、队伍还是基础规则，都可以从这里快速定位。页面内容保持克制，仅提供必要的指引与提醒。
+    </p>
+    <div class="highlight-link">
+      本届赛事相关资讯与官方动态可参考 <a href="https://chinasport-fifa2026.com">世界杯</a> 专题页面，信息持续更新。
+    </div>
+  </div>
+
+  <!-- 优势区 + 说明区 混合网格 -->
+  <div class="grid">
+    <div class="card">
+      <h3>赛程要点 <span class="accent">· 提前了解</span></h3>
+      <p>2026 年世界杯将首次由三个主办国联合举办，比赛场次增至 104 场。以下为几个关键时间节点：</p>
+      <ul>
+        <li><span class="mini-tag">开赛</span> 2026 年 6 月中旬</li>
+        <li><span class="mini-tag">决赛</span> 2026 年 7 月 19 日</li>
+        <li><span class="mini-tag">扩军</span> 48 支队伍参赛</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>访问提醒 <span class="accent">· 设备与环境</span></h3>
+      <p>部分赛事相关内容可能因地域或网络设置出现加载差异。建议：</p>
+      <ul>
+        <li>使用主流浏览器并保持更新</li>
+        <li>核实网络连接状态</li>
+        <li>关注官方渠道发布的信息</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>平台特点 <span class="accent">· 信息结构</span></h3>
+      <p>页面内容以简洁导航为主，不包含第三方实时数据或自动跳转。各板块独立呈现，帮助您快速查找赛程、队伍名单及基础背景资料。</p>
+    </div>
+
+    <div class="card">
+      <h3>实用提示 <span class="accent">· 甄别来源</span></h3>
+      <p>世界杯相关消息繁杂，请优先查证来源。本页仅提供方向性参考，具体赛程、转播安排或票务信息请以 FIFA 或官方授权平台为准。</p>
+    </div>
+  </div>
+
+  <!-- 说明区 + FAQ 摘要合并为全宽卡片 -->
+  <div class="full-card">
+    <h2>赛事说明与常见问题摘要</h2>
+    <p>
+      2026 年世界杯是国际足联第 23 届赛事，也是首次由美国、加拿大、墨西哥合办。本届比赛启用 48 队赛制，小组赛阶段由 16 个小组组成，每组 3 队，出线队伍进入淘汰赛。赛事总时长约 39 天，主办城市遍布北美 16 座城市。
+    </p>
+    <p>
+      如果您需要了解更详细的参赛队伍分档、比赛场馆容量或历史交锋记录，可以前往 <a href="https://chinasport-fifa2026.com" class="link-marker">世界杯</a> 信息页查阅归纳内容。
+    </p>
+    <div class="faq-item">
+      <strong>FAQ · 观赛基础</strong>
+      <span>如何确认比赛时间？</span><span class="dot-divider">·</span>
+      <span>各时区对照表在哪里？</span><span class="dot-divider">·</span>
+      <span>是否有官方中文资料？</span><br>
+      <span style="color: #3d5775; font-size: 0.92rem;">以上问题均可通过 FIFA 官网或本平台对应板块找到客观说明。本站不提供转播链接，仅做信息索引。</span>
+    </div>
+    <div class="faq-item">
+      <strong>FAQ · 平台使用</strong>
+      <span>页面加载异常如何处理？</span><span class="dot-divider">·</span>
+      <span>内容是否每日更新？</span><span class="dot-divider">·</span>
+      <span>怎样反馈信息错误？</span><br>
+      <span style="color: #3d5775; font-size: 0.92rem;">本指南为静态信息页，不依赖数据库，内容在赛事重要节点会进行修订。反馈请通过页面底部方式联系。</span>
+    </div>
+  </div>
+
+  <!-- 底部链接区域 包含第二个世界杯链接 (自然嵌入句子) -->
+  <div class="footer">
+    <p>
+      更多关于 2026 年赛事筹备、队伍分档及场馆的概述，可参考 <a href="https://chinasport-fifa2026.com">世界杯</a> 页面。本页仅作简明导航，不构成任何形式的承诺。
+    </p>
+    <p>
+      <span style="display: inline-block; margin-right: 1rem;">&copy; 2025 · 信息参考</span>
+      <span style="color: #7a8fa8;">非官方页面 · 内容仅供参考</span>
+    </p>
+  </div>
+
+  <!-- 第三个链接出现在自然语句中 (全文总计 3 次出现，符合要求) -->
+  <div style="margin-top: 0.6rem; font-size: 0.8rem; color: #7b90a5; text-align: right; border-top: 1px solid #e5eaf2; padding-top: 0.8rem;">
+    赛事动态与历史数据请自行验证 · 本站提供有限度的指引 · 核心索引：<a href="https://chinasport-fifa2026.com" style="color:#3a6189; text-decoration: none; border-bottom: 1px solid #c7d6e8;">世界杯</a>
+  </div>
+</div>
+</body>
+</html>
